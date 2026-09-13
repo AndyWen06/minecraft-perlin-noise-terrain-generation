@@ -20,21 +20,15 @@ The default `main()` function generates a **32 × 32 Perlin Noise field** using 
 
 ## Octaves
 
-The code also includes `main_with_octaves()`, which combines **3 octaves** of Perlin Noise to produce additional smaller-scale terrain variations.
+The default `main()` function creates **3 octaves** of Perlin Noise to produce additional smaller-scale terrain variations.
 
-To use it, change:
-
-``` python
-main()
-```
-
-to:
+To edit octaves, change:
 
 ``` python
-main_with_octaves()
+octaves = 3
 ```
 
-under the `if __name__ == "__main__":` section.
+under the `main()` function. Set to 1 to effectively disable octaves. 
 
 ## Main Functions
 
